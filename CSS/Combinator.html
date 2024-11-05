@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* decidant selector ( )*/
+        .demo p{
+            background: blueviolet;
+        }
+
+        /* Child selector (>) */
+        .demo > p{
+            background: yellow;
+        }
+
+        /* Genral siblin selector (~) */
+        .demo ~ p{
+            background: chocolate;
+        }
+
+        /* adjacent sibling (+) */
+        .demo + p{
+            background: cyan;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="demo">
+        <p>inner demo</p>
+        <p>inner demo</p>
+        <p>inner demo</p>
+        <p>inner demo</p>
+
+        <section>
+            <p>inner section</p>
+            <p>inner section</p>
+            <p>inner section</p>
+            <p>inner section</p>
+        </section>
+        <p>inner demo</p>
+        <section>
+            <p>inner section</p>
+        </section>
+    </div>
+<p>demo</p>
+    <p>outer Demo</p>
+    <p>outer Demo</p>
+    <p>outer Demo</p>
+</body>
+</html>

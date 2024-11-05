@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* .fix{
+    position: fixed;
+} */
+
+.head1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 0px solid grey;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+}
+
+.logo svg {
+    color: blueviolet;
+}
+
+.searchhead {
+    border: 1px solid grey;
+    width: 180px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.searchhead::placeholder {
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.search {
+    position: absolute;
+    padding-left: 90px;
+}
+
+.signup {
+    border: 0px solid green;
+    border-radius: 100px;
+    padding: 10px;
+    width: 70px;
+    color: #fff;
+    background-color: #04AA6D;
+    position: absolute;
+    right: 0;
+    margin-right: 95px;
+}
+
+.signin {
+    border: 0px solid green;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-bottom: 10px;
+    padding-right: px;
+    width: 70px;
+    color: black;
+    background-color: rgba(133, 240, 133, 0.386);
+    margin-left: 20px;
+}
+
+.signin:hover {
+    color: white;
+    background-color: #04AA6D;
+}
+
+.head2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid grey;
+    align-items: center;
+    background-color: rgba(13, 13, 27, 0.918);
+    overflow-x: scroll;
+    text-transform: uppercase;
+    height: 30px;
+    position: fixed;
+    top: 55px;
+    z-index: 5;
+}
+
+.head2::-webkit-scrollbar {
+    display: none;
+}
+
+.head2 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.head2 a:hover {
+    background-color: rgb(3, 3, 48);
+}
+
+.head2 a:focus {
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.sidenavigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0px solid green;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(174, 178, 180, 0.279);
+    padding: 10px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow-y: scroll;
+    position: fixed;
+    top: 87px;
+}
+
+.sidenavigation h7 {
+    font-size: 25px;
+    padding: 5px;
+    cursor: default;
+}
+
+.sidenavigation p {
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidenavigation p:active {
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.htmlhome {
+    position: relative;
+    border: 0x solid grey;
+    height: 100%;
+    width: 80%;
+    left: 23%;
+    top: 95px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-y: scroll;
+}
+
+.htmlhome::-webkit-scrollbar {
+    display: none;
+}
+
+.htmlhome .ads {
+    height: 100%;
+    width: 13%;
+    left: 780px;
+    top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: absolute;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    overflow-y: scroll;
+    /* position: fixed; */
+}
+
+.ads::-webkit-scrollbar {
+    display: none;
+}
+
+.htmlhome .adtop {
+    top: 10px;
+}
+
+.htmlhome h7 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.mainbtn {
+    margin-bottom: 30px;
+}
+
+.mainbtn span {
+    border: 0px solid green;
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+.mainbtn span:first-child {
+    float: left;
+}
+
+.mainbtn span:last-child {
+    margin-left: 550px;
+
+}
+
+.div1 {
+    border: 0px solid rgba(0, 128, 0, 0.498);
+    background-color: #04aa6d2e;
+    height: 180px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.div1 a {
+    text-decoration: none;
+    color: #fff;
+    border: 0px solid green;
+    padding: 15px;
+    background-color: #04AA6D;
+    border-radius: 5px;
+}
+
+.example {
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+
+.example h7 {
+    font-size: 35px;
+    margin-left: 0;
+}
+
+.example h8 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.div2 {
+    border: 0px solid grey;
+    height: 420px;
+    width: 740px;
+    background-color: rgba(128, 128, 128, 0.132);
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.div2 h7 {
+    font-size: 25px;
+}
+
+.stolen {
+    background-color: #fff;
+    padding: 15px;
+    width: 700px;
+    margin-top: 5px;
+    font-family: Consolas, Menlo, "courier new", monospace;
+    border-left: 3px #04AA6D solid;
+}
+
+.div2 h8 {
+    border: 0px solid green;
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+.div3 {
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.div3 h {
+    font-size: 30px;
+}
+
+.div3 p {
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.div3 button {
+    border: 0px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.192);
+    color: black;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.adbottom {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+    font-size: small;
+}
+
+.adbottom img {
+    justify-content: center;
+}
+
+.div4 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+}
+
+.div4 h7 {
+    font-size: 40px;
+
+}
+
+.div4 p {
+    font-size: 18px;
+    margin: 20px;
+
+}
+
+.div4 .exbox {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 740px;
+    height: 450px;
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+}
+
+.div4 .exbox h7 {
+    font-size: 30px;
+}
+
+.div4 .box {
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    height: 350px;
+    width: 750px;
+}
+
+.div4 .ox {
+    border: 0px solid grey;
+    font-family: Consolas, Menlo, "Courier New", Courier, monospace;
+    background-color: rgba(128, 128, 128, 0.146);
+    font-size: 18px;
+    width: 650px;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+.div4 .ox input {
+    width: 15px;
+}
+
+.div4 .box button {
+    border: 0px solid green;
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.div4 .box a {
+    color: black;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.div4 .box a:hover {
+    color: green;
+}
+
+.quiz {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+
+}
+
+.quiz h7 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.quiz p {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.quiz a {
+    text-decoration: none;
+    border: 0px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2196F3;
+    font-weight: 600;
+}
+
+.mylearning {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+    line-height: 35px;
+}
+
+.mylearning h9 {
+    font-size: 35px;
+}
+
+.mylearning p {
+    font-size: 18px;
+}
+
+.reference {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+}
+
+.reference h9 {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.reference p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.reference ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 400px));
+    width: 700px;
+}
+
+.reference li {
+    border: 0px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.162);
+}
+
+li:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.img {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.img2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+}
+
+.adv {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.footer {
+    background-image: url(https://wallpapers.com/downloads/high/green-space-7fwm57jdldylfq0b.webp);
+    width: 1000px;
+    height: 1000px;
+}
+
+.footer img {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.contact {
+    display: flex;
+    color: #fff4a3;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact p:hover {
+    text-decoration: underline;
+}
+
+.footermain {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin-top: 10px;
+    justify-content: space-around;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.footermain p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footermain h6 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footermain p:hover {
+    color: #fff4a3;
+}
+
+.footerlinks svg {
+    color: #fff;
+}
+
+.footerlinks svg:hover {
+    color: #fff4a3;
+}
+
+.footerlinks {
+    margin-left: 70px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footerlinks p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.footerlinks p:hover {
+    text-decoration: underline;
+    color: #fff4a3;
+}
+
+.exit p {
+    color: #fff;
+    width: 800px;
+    margin-left: 40px;
+    font-size: 12px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.exit u{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.exit u:hover{
+    color:#fff4a3;
+}
+
+.exit p:last-child{
+    margin-top: 20px;
+}
+
+.logo{
+    margin-top: 0px;
+}

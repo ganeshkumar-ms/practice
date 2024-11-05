@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MSI Pulse Pro",
+      "brand": "MSI",
+      "category": "Computers",
+      "price": 999,
+      "description": "MSI Pulse GL66 15.6)",
+      "imageFilename": "71I14ZWiMbL._SX679_.jpg",
+      "createdAt": "2023-07-13T17:46:54.8900000"
+    },
+    {
+      "id": 2,
+      "name": "Acer Swift",
+      "brand": "Acer",
+      "category": "Computers",
+      "price": 929,
+      "description": "Acer Swift X SFX14-42G-R607 Creator Laptdp, 14",
+      "imageFilename": "81nN5u1MEuL.jpg",
+      "createdAt": "2023-07-13T17:46:54.8900000"
+    }
+  ]
+}

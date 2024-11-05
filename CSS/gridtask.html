@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+       ul{
+            display: grid;
+            list-style: none;
+            grid-template-columns: repeat(3,minmax(200px,200px));
+            width: 700px;
+            height: 300px;
+            text-align: center;
+        }
+        .grid1 li{
+            border: 3px solid red;
+            margin:3px;
+           
+        }
+       .grid1 li:nth-child(1){
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+       .grid1 li:nth-child(2){
+            grid-row: 2/span 4;
+            grid-column:1;
+        }
+      .grid1 li:nth-child(4){
+        grid-column: 3;
+        grid-row: 2/span 4;
+       }
+
+      .grid1 li:nth-child(5){
+        grid-column: 2;
+        grid-row: 3/span 3 ;
+       }
+
+     .grid1  li:nth-child(6){
+        grid-column: 1/span 3;
+        grid-row: 6;
+       }
+
+       .grid2 li{
+        border: 3px solid black;
+        margin: 3px;
+       }
+
+       .grid2 li:nth-child(1){
+        grid-column: 1;
+        grid-row: 1/span 2;
+       }
+       .grid2 li:nth-child(2){
+        grid-column: 2/span 2;
+        grid-row: 1;
+       }
+
+       .grid2 li:nth-child(5){
+        grid-column: 1/span 3;
+        grid-row: 3;
+       }
+
+       .grid2 li:nth-child(6){
+        grid-column: 1/span 3;
+        grid-row: 4;
+       }
+
+     
+    
+    </style>
+    </head>
+    <body>
+        <div class="grid1">
+            <ul>
+                <li>header</li>
+                <li>sidebar</li>
+                <li>navigation</li>
+                <li>ads</li>
+                <li>main</li>
+                <li>footer</li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="grid2">
+            <ul>
+                <li>aside</li>
+                <li>header</li>
+                <li>section1</li>
+                <li>section2</li>
+                <li>article</li>
+                <li>section3</li>
+            </ul>
+        </div>
+    </body>
+</html>

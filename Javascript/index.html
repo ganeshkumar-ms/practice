@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">
+        Click me..!
+    </button>
+    <script src="index.js"></script>
+    <script>
+        // function myFunction(){
+        //     alert("Clicked the button");
+        //     document.write("<h1>You clicked the button </h1>")
+        // }
+
+        /* 
+            input and output statements
+
+            output:x
+                1. console.log();
+                2. console.table();
+                3. alert() or window.alert()
+                4. confirm() or window.confirm()
+                5. document.write()
+                6. document.getElementMethod()
+
+            input:
+                1. prompt() or window.prompt()
+                2. document.getElementMethod()
+
+
+            Variable:=> Store some value or data in a name
+
+            eg:
+             a="I am Gansesh";
+             num = 10.23
+
+            Variable Declaration:
+
+            1. let
+            2. var
+            3. const
+        */
+
+        // let a = 10;
+        // a ="I am Ganesh";
+        // console.log(a);
+        // document.write(a);
+        //global
+        // let b =10;
+        {
+            //local
+            // const b=10;
+            {// block
+                const b = 10;
+                console.log(b);
+                b=20;
+            }
+            console.log(b);
+        }
+        console.log(b);
+    </script>
+</body>
+</html>

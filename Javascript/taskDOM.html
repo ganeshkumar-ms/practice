@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <button class="btn px-4 py-2 bg-secondary" style="margin-top: 22%;margin-left: 45%;" onclick="colors()">CLICK for bg-change</button>
+</body>
+
+<script>
+    let body=document.getElementsByTagName('body');
+    function colors(){
+        const r = Math.floor(Math.random()*255+1);
+        const g = Math.floor(Math.random()*255+1);
+        const b = Math.floor(Math.random()*255+1);   
+        body[0].style.background= `rgb(${r},${g},${b})`;
+    }
+</script>
+
+</html>

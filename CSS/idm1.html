@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>idm techpark</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            .spec{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .cards{
+                font-family: "Poppins", sans-serif;
+                border: 0px solid grey;
+                height: 250px;
+                width: 300px;
+                text-align: center;
+                padding: 20px;
+                box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.425);
+                margin: 15px;
+                transition: all 1s;
+                font-size: 13px;
+                border-radius: 5px;
+            }
+
+            .cards:hover{
+                transform: translateY(-10px);
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 255, 0.495);
+            }
+
+            .cards h3:hover{
+                transform: scale(1.2);
+                color: rgb(131, 4, 250);
+            }
+
+
+            .cards img{
+                height: 90px;
+            }
+            .cards h3{
+                color: rgb(46, 46, 254);
+            }
+
+            .courses{
+                border: 0px solid black;
+                height: 320px;
+                width: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.425);
+                position: relative;
+                margin: 15px;
+                display: inline-block;
+                transition: all 1s;
+            }
+
+            .courses .center:hover{
+                transform: scale(1.1);
+            }
+
+
+            .courses:hover{
+                transform: translateY(-15px);
+            }
+
+            .courses img{
+                width: 390px;
+                margin: 5px;
+            }
+
+            svg{
+                color: rgb(217, 217, 9);
+                padding-top: 50px;
+            }
+
+            .rating{
+                padding-left: 20px;
+               position: absolute;
+            }
+
+            .price{
+                padding-left: 200px;
+                padding-top: 50px;
+            }
+
+            .price span:first-child{
+                color: blue;
+                font-weight: 600;
+            }
+            
+            .center{
+                position: absolute;
+                border: 0px solid black;
+                border-radius: 5px;
+                background-color: white;
+                text-align: center;
+                box-shadow: 0px 0px 14px 0px rgba(128, 128, 128, 0.505);
+                padding: 5px;
+                top: 170px;
+                margin-left: 22px;
+            }
+
+            .center span{
+                padding: 50px;   
+            }
+
+          .center span:nth-child(even){
+            color: blue;
+         }
+
+         .courses h3{
+            font-size: 17px;
+         }
+
+         
+        </style>
+    </head>
+    <body>
+
+        <div class="spec">
+
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/c30427_2d47dfc5f84e4c51bccb498f2c4d6f57~mv2.webp/v1/fill/w_149,h_111,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c30427_2d47dfc5f84e4c51bccb498f2c4d6f57~mv2.webp"
+                    alt>
+                <h3>
+                    EXPERIENCED TRAINERS</h3>
+                <p>​The trainers here are certified working professionals, with
+                    years of experience in the industry. Get maximum benefits
+                    from
+                    their vast knowledge of the subject</p>
+            </div>
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/c30427_d8ca5e5774c54f4d8cbffbcfe3bf14a3~mv2.png/v1/fill/w_149,h_111,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/placement%20vector.png"
+                    alt>
+                <h3>
+                    100% PLACEMENT ASSISTANCE</h3>
+                <p>​The trainers here are certified working professionals, with
+                    years of experience in the industry. Get maximum benefits
+                    from
+                    their vast knowledge of the subject</p>
+            </div>
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/c30427_2d47dfc5f84e4c51bccb498f2c4d6f57~mv2.webp/v1/fill/w_149,h_111,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c30427_2d47dfc5f84e4c51bccb498f2c4d6f57~mv2.webp"
+                    alt>
+                <h3>
+                    ONE-TO-ONE TRAINING SESSION</h3>
+                <p>We offer one-to-one training sessions to our students, where
+                    they can work closely with our instructors and get
+                    individual attention. Lab sessions are also conducted.</p>
+            </div>
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/3021ec_5c87fa8c638f47f68c4bf32c3f7e3341~mv2.png/v1/fill/w_149,h_111,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/presentation.png"
+                    alt>
+                <h3>
+                    FLEXIBLE BATCH TIMING</h3>
+                <p>We started with 2 trainers, now we are 10+ and it’s still
+                    increasing. So we can give the students flexibility
+                    timings</p>
+            </div>
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/c30427_f29da79778a14a6e9c430acdaa326a63~mv2.jpg/v1/fill/w_149,h_111,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20943633.jpg"
+                    alt>
+                <h3>
+                    WORK IN LIVE PROJECTS
+                </h3>
+                <p>Have the rare opportunity to work on more than one live
+                    project and learn how actual industry works under the
+                    guidance of the trainer</p>
+            </div>
+            <div class="cards">
+                <img
+                    src="https://static.wixstatic.com/media/c30427_d8a2b5c139084486ba3bcc65b8f21248~mv2.jpg/v1/fill/w_149,h_111,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20943447.jpg"
+                    alt>
+                <h3>
+                    COURSE MATERIALS</h3>
+                <p>Related e-books and practical course materials are provided
+                    for the students promptly. Video recordings of lectures are
+                    also sent, if needed</p>
+            </div>
+        </div>
+<br><br><br>
+        <div class="courses">
+            <img
+                src="https://static.wixstatic.com/media/3021ec_d977cfd7adea415ca3b72a446fb4f8dd~mv2.png/v1/fill/w_498,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3021ec_d977cfd7adea415ca3b72a446fb4f8dd~mv2.png"
+                alt>
+            <div class="rating">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+            </div>
+            <div class="center">
+                <h3>C/C++ Training IN IDM Techpark</h3>
+                <span>Learn More--</span>
+                <span>1 Month</span>
+            </div>
+            <div class="price">
+                <span>Rs.10,000</span>
+                <span>(140+ Rating)</span>
+            </div>
+        </div>
+        <div class="courses">
+            <img
+                src="https://static.wixstatic.com/media/3021ec_772a9ac453a4401cb61219af4c40ba01~mv2.png/v1/fill/w_498,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3.png"
+                alt>
+            <div class="rating">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+            </div>
+            <div class="center">
+                <h3>
+                    JAVA Training IN IDM Techpark</h3>
+                <span>Learn More--</span>
+                <span>2 Month</span>
+            </div>
+            <div class="price">
+                <span>Rs.15,000</span>
+                <span>(140+ Rating)</span>
+            </div>
+        </div>
+        <div class="courses">
+            <img
+                src="https://static.wixstatic.com/media/3021ec_031a512bd92d47b98e2a49da4f6c9380~mv2.png/v1/fill/w_498,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2.png"
+                alt>
+            <div class="rating">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+            </div>
+            <div class="center">
+                <h3>
+                    PYTHON Training IN IDM Techpark</h3>
+                <span>Learn More--</span>
+                <span>2 Month</span>
+            </div>
+            <div class="price">
+                <span>Rs.15,000</span>
+                <span>(140+ Rating)</span>
+            </div>
+        </div>
+        </div>
+        <div class="courses">
+            <img
+                src="https://static.wixstatic.com/media/3021ec_914ccecbf0d0487f9aebab8c4ee955f1~mv2.png/v1/fill/w_498,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4.png"
+                alt>
+            <div class="rating">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16"
+                    fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+            </div>
+            <div class="center">
+                <h3>
+                    FULL STACK Training IN IDM Techpark</h3>
+                <span>Learn More--</span>
+                <span>4 Month</span>
+            </div>
+            <div class="price">
+                <span>Rs.25,000</span>
+                <span>(140+ Rating)</span>
+            </div>
+        </div>
+
+    </body>
+</html>

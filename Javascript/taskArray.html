@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let str="helloworld"
+        for(let i=5;i>=0;i--){
+            let a=""
+            for(let j=5;j>=i;j--){
+                a+=str[j];
+            }
+            document.write(a+"<br>")
+        }
+    </script>  -->
+<!--     
+    <button type="button" style="border-color: aqua;border-width: 110px;padding: 50px;border-radius: 50%;font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 35%;margin-top: 10%;" onclick="document.getElementById('demo').innerHTML = Date()">time?</button>
+
+    <p id="demo"></p> -->
+
+    <script>
+         
+         let empty=[];
+        for(i=0;i<5;i++){
+            let values = prompt("Enter value "+(i+1)+" to add");
+            empty.push(values);
+        }
+        console.log(empty);
+        let del = parseInt(prompt("Enter the index values to delete"));
+        empty.splice(del,1);
+
+        document.write(empty);
+
+    </script>
+
+</body>
+</html>

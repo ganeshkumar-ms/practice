@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1 id="disp"></h1>
+        <script>
+        // const date = new Date();
+        // document.write(`<h1>${date.getDate()}</h1>`)
+        // document.write(`<h1>${date.getDay()}</h1>`)
+        // document.write(`<h1>${date.getFullYear()}</h1>`)
+        // document.write(`<h1>${date.getHours()}</h1>`)
+        // document.write(`<h1>${date.getSeconds()}</h1>`)
+        // document.write(`<h1>${date.getMinutes()}</h1>`)
+        // document.write("<h1>"+date.getMilliseconds()+"</h1>")
+
+        setTimeout(()=>{
+            document.write(`<h1>${date}</h1>`)
+
+            clearInterval(a);
+        },10000)
+        var date =null;
+        var a = setInterval(()=>{
+            date = new Date();
+
+            document.getElementById("disp").innerHTML = date
+        },1000)
+
+    </script>
+    </body>
+</html>

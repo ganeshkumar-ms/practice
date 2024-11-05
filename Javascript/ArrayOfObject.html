@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <ul id="disp">
+
+        </ul>
+        <script>
+        const bikes = [
+            {
+                Brand:'Royal Enfield',
+                Model:"Hunter 350",
+                Price:"2.25L"
+            },
+            {
+                Brand:'Royal Enfield',
+                Model:"Scram 411",
+                Price:"2.8L"
+            },
+            {
+                Brand:'KTM',
+                Model:"RC 390",
+                Price:"3.25L"
+            },
+            {
+                Brand:'BMW',
+                Model:"S1000",
+                Price:"10.25L"
+            }
+        ];
+
+        console.log(bikes[0].Brand);
+
+        for(let i=0;i<bikes.length;i++){
+            console.log(bikes[i].Brand);
+        }
+
+        for(let j in bikes){
+            console.log(bikes[j].Model);
+        }
+
+        for(let k of bikes){
+            console.log(k.Price);
+        }
+        
+        // document.getElementById('disp').innerHTML =bikes.forEach((item)=>{
+        //     let text =""
+        //     text += `<li>${item.Brand}</li>`
+
+        //     return text
+        //     })
+
+        // document.getElementById('disp').innerHTML =  bikes.map((item)=>{
+        //     let text =""
+        //     text += `<li>${item.Brand}</li>`
+
+        //     return text
+        //     }).join("")
+
+        document.getElementById('disp').innerHTML = bikes.filter((item)=>{
+            if(item.Brand === "Royal Enfield"){
+                console.log(item);
+            }
+        })
+    </script>
+    </body>
+</html>

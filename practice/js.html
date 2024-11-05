@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    cartqnty+=4;
+    console.log('cart qunaity is:'+cartqnty)">4+
+  </button>
+  <button onclick="
+  cartqnty -=1;
+  console.log(cartqnty)
+  ">Remove from cart</button>
+</body>
+<script>
+  const name= 'ganesh';
+  console.log('My name is:'+name);
+let cartqnty=0;
+  let cost=(5+(3*2)+9);
+  let tax=(5+(3*2)+9)*0.1;
+  let totalcost= cost+tax;
+  console.log(`cost of food:$${cost}`)
+  console.log(`tax of food:$${tax}`)
+  console.log(`total of food:$${totalcost}`)
+</script>
+</html>

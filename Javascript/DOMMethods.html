@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="parent">
+            <p id="root1">Demo Sample Paragraph...!</p>
+            <p id="root2">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Ratione ut quam in tempore nihil? Vel, modi? Voluptatibus
+                laboriosam deleniti sed tempore aperiam eum voluptates
+                temporibus minus, ducimus quod asperiores modi!</p>
+        </div>
+
+        <button id="btn1" onclick="addElementToParent()">Add Element</button>
+        <button id="btn2" onclick="removeElement()">Remove Element</button>
+        <button id="btn3" onclick="removeChildElement()">Remove Child Element</button>
+        <button id="btn4" onclick="replaceChildElement()">Replace Child Element</button>
+
+        <script>
+            const parent = document.querySelector('#parent');
+            const root1 = document.querySelector('#root1');
+            const root2 = document.querySelector('#root2');
+
+            function addElementToParent(){
+                const element = document.createElement("h1");
+                const text = document.createTextNode("This is new element");
+
+                element.append(text);
+                element.setAttribute('style',"background:cyan;")
+
+                parent.insertBefore(element,root1);
+            }
+
+            function removeElement(){
+                root1.remove()
+            }
+
+            function removeChildElement(){
+                parent.removeChild(root2)
+            }
+
+            function replaceChildElement(){
+                const element = document.createElement("h1");
+                const text = document.createTextNode("This is replaced element");
+
+                element.append(text);
+                element.setAttribute('style',"background:cyan;");
+                element.setAttribute('id',"root1");
+
+                parent.replaceChild(element,root1)
+            }
+        </script>
+    </body>
+</html>

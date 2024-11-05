@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+        <title>Document</title>
+    </head>
+    <body class="container">
+        <form class="row g-2" id="form">
+            <div class="col-sm-12 col-md-6">
+                <label for class="form-label">Name</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <label for class="form-check-label">Gender</label>
+                <select name id="Gender" class="form-select">
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <label for class="form-check-label">Nationality</label>
+                <select name id="nation" class="form-select">
+                    <option value="Indian" selected>Indian</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <label for class="form-label">Birthplace</label>
+                <input type="text" id="birth" class="form-control">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Nationality</th>
+                    <th>Birthplace</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="display">
+
+            </tbody>
+        </table>
+    </body>
+
+    <script>
+        const name = document.getElementById("name")
+        const gender = document.getElementById("Gender")
+        const Nation = document.getElementById("nation")
+        const BirthPlace = document.getElementById("birth")
+
+        async function sendData(){
+            event.preventDefault();
+            const dataObj = {
+                Name:name.value,
+                Gender:gender.value,
+                Nation:Nation.value,
+                BirthPlace:BirthPlace.value
+            }
+
+            console.log(dataObj);
+            try{
+
+                await fetch('https://66a1f78a967c89168f1e3a87.mockapi.io/Users',{
+                    method:'POST',
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify(dataObj)
+                })
+                .then(()=>{
+                    alert("Data sent");
+                    window.location.reload();
+                })
+            }
+            catch(error){
+                console.log(error);
+            }   
+            finally{
+                console.log('Operation Success');
+            }
+            
+        }
+
+        document.getElementById("form").addEventListener("submit",sendData);
+
+        async function getDatas(){
+            const fetchedData = await fetch("https://66a1f78a967c89168f1e3a87.mockapi.io/Users")
+                                        .then((response)=>{return response.json()});
+
+            const tableData = fetchedData.map((items)=>{
+                return(
+                    `
+                        <tr>
+                            <td>${items.Name}</td>
+                            <td>${items.Gender}</td>
+                            <td>${items.Nation}</td>
+                            <td>${items.BirthPlace}</td>
+                            <td>
+                                <button onclick="setupEdit(${items.id})">Edit</button>
+                                <button onclick="deleteData(${items.id})">Delete</button>
+                            </td>
+                        </tr>
+                    `
+                )
+            })
+
+            document.getElementById('display').innerHTML += tableData.join("")
+        }
+
+        window.addEventListener("load",getDatas);
+
+        function setupEdit(id){
+            localStorage.setItem("_id",id);
+            window.location = "form.html"
+        }
+
+        async function deleteData(id){
+            await fetch("https://66a1f78a967c89168f1e3a87.mockapi.io/Users/"+id,{
+                method:'DELETE'
+            })
+            .then((response)=>{
+                alert("Data Deleted..!")
+                window.location.reload();
+            })
+        }
+    </script>
+</html>

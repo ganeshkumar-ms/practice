@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p class="text">Hello World..!</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Labore, dolor nihil quidem illo delectus, nam, rem fuga
+            assumenda deserunt <span>Demo nitro...!</span> beatae tenetur. Nobis nam aperiam quam ratione
+            ipsa accusantium voluptatibus dolores?</p>
+
+        <h2 id="display"></h2>
+        <button onclick="displayColor()">Random</button>
+    </body>
+    <script>
+        /* 
+            1. id
+            2. class
+            3. tag
+            4. name (checks and Radios)
+        */
+
+        const classElement = document.getElementsByClassName('text');
+        const Display = document.getElementById('display');
+        const tagElement = document.getElementsByTagName('p')
+
+        // Display.innerHTML = classElement[0].innerHTML
+        Display.innerHTML = tagElement[1].innerHTML
+        console.log(classElement[0]);
+        Display.style.background = "red";
+
+        
+        // for(let i=0;i<classElement.length;i++){
+        //     classElement[i].style.background = "cyan";
+
+        // }
+
+        function displayColor(){
+            console.log(Math.random());
+            Display.innerHTML +="<li>"+Math.random()+"</li>"
+        }
+    </script>
+</html>

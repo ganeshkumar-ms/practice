@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="">Communication Address</label>
+        <textarea name="" id="inp1"></textarea>
+        <label for="">Permanent Address</label>
+        <textarea name="" id="inp2"></textarea>
+    </form>
+
+    <h1 id="disp"></h1>
+
+    <button id="btn1">Add event</button>
+    <button id="btn2">Remove event</button>
+    <script>
+        const box1 = document.getElementById("inp1");
+        const box2 = document.getElementById("inp2");
+        const Form = document.getElementById("form");
+
+        // function dispValues(){
+        //     box1.value = box1.value.toUpperCase()
+        //     box2.value = box2.value.toUpperCase()
+        // }
+
+        // box1.adentListener("change",dispValues)
+        // box2.addEventListener("change",dispValues)
+
+        function keyEvents1(){
+            box2.value = box1.value;
+        }
+
+        // box1.addEventListener("keypress",keyEvents1);
+        // box1.addEventListener("keydown",keyEvents1);
+        // box1.addEventListener("keyup",keyEvents1);
+
+        function mouseEvents1(){
+            Form.style.background = 'red';
+        }
+        function mouseEvents2(){
+            Form.style.background = 'cyan';
+        }
+
+        function mouseMoveEvent(){
+            document.getElementById('disp').innerHTML = Math.random()*20
+        }
+
+        Form.addEventListener("click",mouseEvents1)
+        Form.addEventListener("dblclick",mouseEvents2)
+        // Form.addEventListener("mousedown",mouseEvents1)
+        // Form.addEventListener("mouseup",mouseEvents2)
+        // Form.addEventListener("mouseenter",mouseEvents1)
+        // Form.addEventListener("mouseleave",mouseEvents2)
+        // Form.addEventListener("mouseover",mouseEvents1)
+        // Form.addEventListener("mouseout",mouseEvents2)
+ 
+        Form.addEventListener("mousemove",mouseMoveEvent);
+
+        document.getElementById('btn2').addEventListener("click",()=>{
+            Form.removeEventListener("mousemove",mouseMoveEvent);
+        })
+        document.getElementById('btn1').addEventListener("click",()=>{
+            Form.addEventListener("mousemove",mouseMoveEvent);
+        })
+
+        // window.onload = () =>{
+        //     box1.onpaste = (e) => e.preventDefault()
+        // }
+
+        // document.getElementById('disp').oncut = () =>{
+        //     return false;
+        // }
+        // document.getElementById('disp').oncopy = () =>{
+        //     return false;
+        // }
+    </script>
+</body>
+</html>

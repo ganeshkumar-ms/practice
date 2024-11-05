@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            height: 1000px;
+            list-style:none;
+            /* list-style-image: url(https://vetores.org/wp-content/uploads/w3schools.png); */
+            display: grid;
+            /* grid-template-columns: 400px 400px 400px; */
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        }
+
+        li{
+        
+            border: 3px solid;
+        }
+
+        li:nth-child(1){
+            grid-column:1 / span 3;
+            grid-row:1 ;
+        }
+
+        li:nth-child(2){
+            grid-column: 1;
+            grid-row: 2 / span 3;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+</body>
+</html>

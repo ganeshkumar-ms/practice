@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(Name,Age){
+                this.SName = Name;
+                this.SAge = Age
+            }
+            Demo(SName,SAge){
+                console.log("Name :"+this.SName);
+                console.log("Age :"+this.SAge);
+            }
+        }
+        var stu = new Student("Ganesh",23);
+        var stu1 = new Student("Hari",23);
+        stu.Demo();
+        stu1.Demo();
+    </script>
+</body>
+</html>

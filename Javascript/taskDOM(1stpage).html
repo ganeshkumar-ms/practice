@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Feature!@Instagram</title>
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/pics-photos-instagram-logo-png-4.png">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body class="w-100 h-100" style="background:linear-gradient(rgb(197, 37, 152),rgb(139, 139, 228));background-attachment: fixed;">
+    <p style="font-size: 70px; margin-top: 12%;margin-left: 30%; font-family: Poppins, sans-serif;
+    font-weight: 800;">insta reviews</p>
+    <div class="input-group has-validation w-50" style="margin-left: 25%;">
+        <span class="input-group-text">@</span>
+        <div class="form-floating is-invalid">
+          <input type="text" class="form-control is-invalid" id="username" placeholder="Username" required>
+          <label for="username">Username/Mail</label>
+        </div>
+        <button onclick="store()" class="btn btn-danger p-3" style="width: 100px;">Submit</button>
+        <div class="invalid-feedback">
+          Please type your username/mail.
+        </div>
+      </div>
+      <script src="taskDOM.js"></script>
+   </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        .box{
+            border: 0px solid grey;
+            border-radius: 5px;
+            height: 400px;
+            width: 272px;
+            box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.215);
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            transition: all 1s;
+
+        }
+        .box img{
+            /* border-radius: 3px; */
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .btn{
+            border: solid 1px rgba(128, 128, 128, 0.393);
+            padding: 8px;
+            border-radius: 3px;
+            background-color: white;
+            width: 250px;
+            margin-left: 10px;
+            color: rgb(56, 122, 56);
+        }
+
+        h4{
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+
+        .beginner img{
+            position: absolute;
+           
+        }
+
+        .beginner p{
+            margin-left: 30px;
+        } 
+
+        
+        .interest img{
+            position: absolute;
+        }
+
+        .interest p{
+            margin-left: 30px;
+        }
+    
+
+        .box:hover .btn{
+            background-color: rgb(56, 122, 56);;
+            color: #fff;
+        }
+
+        .btn:focus{
+            /* box-shadow: 0px 0px 20px rgb(56, 122, 56);; */
+            background-color: black;
+
+        }
+
+        .box:focus-within{
+            background-color: black;
+        }
+
+        body .box:nth-child(2),
+        body .box:nth-child(3){
+            background-color: blueviolet;
+        }
+
+        body .box:nth-child(odd){
+            background: red;
+        }
+        
+        .demo p:only-child{
+            background-color: aquamarine;
+        }
+
+        .box:hover{
+            transform: scale(1.1);
+            /* transform: translateY(-20px); */
+        }
+
+
+    </style>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geeks</title>
+    </head>
+    <body>
+        <div class="box">
+            <img
+                src="https://media.geeksforgeeks.org/img-practice/prod/courses/504/Web/Content/DSA-to-Dev_1705410853.webp"
+                alt>
+            <div class="content">
+                <h4>DSA to Development:A Complete
+                    Guide</h4>
+                <div class="beginner">
+                    <span><img
+                            src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg"
+                            alt></span>
+                    <span><p>Beginner to Advance</p></span><br>
+                </div>
+                <div class="interest">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg"
+                            alt>
+                    </span>
+                    <span><p>
+                            250k+ interested Geeks</p>
+                    </span><br>
+                </div>
+                <button class="btn"><text style="font-weight:600">Explore
+                        now</text></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img
+                src="https://media.geeksforgeeks.org/img-practice/prod/courses/241/Web/Content/FSRNL_1705410152.webp"
+                alt>
+            <div class="content">
+                <h4>Full Stack Development with React & Node JS - Live
+                </h4>
+                <div class="beginner">
+                    <span><img
+                            src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg"
+                            alt></span>
+                    <span><p>Beginner to Advance</p></span><br>
+                </div>
+                <div class="interest">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg"
+                            alt>
+                    </span>
+                    <span><p>
+                            239k+ interested Geeks</p>
+                    </span><br>
+
+                </div>
+                <button class="btn"><text style="font-weight:600">Explore
+                        now</text></button>
+            </div>
+        </div>
+        <div class="box">
+            <img
+                src="https://media.geeksforgeeks.org/img-practice/prod/courses/458/Web/Content/interview-101_1705399030.webp"
+                alt>
+            <div class="content">
+                <h4>Tech Interview 101 - From DSA to System Design
+                </h4>
+                <div class="beginner">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg"
+                            alt></span>
+                    <span><p>Beginner to Advance</p></span><br>
+                </div>
+                <div class="interest">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg"
+                            alt>
+                    </span>
+                    <span><p>
+                            280k+ interested Geeks</p>
+                    </span><br>
+                </div>
+                <button class="btn"><text style="font-weight:600">Explore
+                        now</text></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img
+                src="https://media.geeksforgeeks.org/img-practice/prod/courses/517/Web/Content/Software-Testing_1705407884.webp"
+                alt>
+            <div class="content">
+                <h4>Complete Guide to Software Testing and Automation
+
+                </h4>
+                <div class="beginner">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg"
+                            alt></span>
+                    <span><p>Beginner to Advance</p></span><br>
+                </div>
+                <div class="interest">
+                    <span>
+                        <img
+                            src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg"
+                            alt>
+                    </span>
+                    <span><p>
+                            280k+ interested Geeks</p>
+                    </span><br>
+                </div>
+                <button class="btn"><text style="font-weight:600">Explore
+                        now</text></button>
+            </div>
+        </div>
+
+
+        <div class="demo">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div class="demo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </body>
+</html>

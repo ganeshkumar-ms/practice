@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            Demo( SSName, SSAge){
+                console.log("Name :"+SSName);
+                console.log("Age :"+SSAge);
+            }
+        }
+        class StuMark extends Student{
+            Demo(SSName,SSAge){
+                super.Demo(SSName,SSAge);
+                console.log("Name 2 : "+SSName);
+                console.log("Age 2 : "+SSAge);
+            }
+        }
+        var stu1 = new StuMark();
+        stu1.Demo("Hari",25)
+    </script>
+</body>
+</html>

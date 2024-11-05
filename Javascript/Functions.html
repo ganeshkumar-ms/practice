@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter A:</label>
+    <input type="number" name="" id="num1">
+    <label for="">Enter B:</label>
+    <input type="number" name="" id="num2">
+    <button
+        onclick="ans()"
+    >Calculate</button>
+
+    <h1>
+        answer: <br>
+        Addition: <span id="result1"></span> <br>
+        Multiplied: <span id="result2"></span>
+    </h1>
+    <script>
+        /* 
+            Syntax :
+                function FUN_NAME(parameter){
+                    set of codes;
+                }
+
+                const FUN_NAME = (parameter) =>{
+                    set of code;
+                }
+        */
+        const num1 = document.getElementById('num1')
+        const num2 = document.getElementById('num2')
+        const result1 = document.getElementById('result1')
+        const result2 = document.getElementById('result2')
+        
+        // function demo(){
+        //     result1.innerHTML = Number(num1.value)+Number(num2.value);
+
+        //     let multiResult = multiValue(num1.value,num2.value);
+
+        //     result2.innerHTML = multiResult;
+        // }
+
+        // const multiValue = (a,b) =>{
+        //     return Number(a)*Number(b);
+        // }
+
+        function ans(){
+            result1.innerHTML=Number(num1.value)+Number(num2.value);
+            result2.innerHTML=Number(num1.value)*Number(num2.value);
+        }
+    </script>
+</body>
+</html>

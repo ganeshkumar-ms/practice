@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Lorem ipsum dolor sit amet. Lorem";
+
+        console.log(str);
+        // String methods
+        console.log(str.length);
+        console.log(str.charAt(3));
+        console.log(str.charCodeAt(5));
+
+        console.log(str.concat("Hello world"));
+        console.log(str.includes('z'));
+        console.log(str.endsWith('amet.'));
+
+        console.log(str.slice(-20,-10));
+        console.log(str.substring(3,20));
+        console.log(str.substr(3,1));
+
+        console.log(str.replace("Lorem","IDM Techpark"));
+        console.log(str.replaceAll("Lorem","Segolsys"));
+        let str2 = "           "+str+"           ";
+        console.log(str2);
+        console.log(str2.trim());
+        console.log(str2.trimStart());
+        console.log(str2.trimEnd());
+
+        console.log(str.padStart(40,"h"));
+        console.log(str.padEnd(40,"!@#$%^&*"));
+
+        for (let index = 0; index < str.length; index++) {
+            console.log(str[index]);
+            
+        }
+    </script>
+    
+</body>
+</html>

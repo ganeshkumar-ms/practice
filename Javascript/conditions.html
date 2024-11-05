@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const num = Number(prompt("Enter a number"));
+        // console.log(typeof num);
+        // alert(num);
+        // document.write(num);
+
+        /* 
+            conditions types:
+            1. if
+            2. if..else
+            3. if..elseif...else
+            4. switch..case
+            
+            5. nested
+
+            1. IF(condition){
+                block of code;
+            }
+            2. IF(condition){
+                    block of statement
+                }
+                else{
+                    false block statement
+                }
+            3. IF(condition){
+                    block 1;
+                }
+                ELSE IF(condition){
+                    block 2;
+                }
+                .
+                .
+                .
+                ELSE{
+                    false block;
+                }
+
+            4. switch(condition){
+                    case 1:
+                        block 1
+                        break;
+                    .
+                    .
+                    .
+                    .
+                    default:
+                        false block
+                }
+            
+        */
+
+        // let mark = parseInt(prompt("Enter mark:"))
+
+        // if(mark>=0 && mark<=100){
+        //     alert("valid mark");
+        //     if(mark>=40 && mark<=100){
+        //         confirm("Pass");
+
+        //         if(mark>=80 && mark<=100){
+        //             alert("1st class")
+        //         }
+        //         else if(mark>=60 && mark<80){
+        //             alert("Second Class")
+        //         }
+        //         else if(mark>=50&&mark<60){
+        //             alert("third class")
+        //         }
+        //         else{
+        //             alert("Fourth class")
+        //         }
+        //     }
+        //     else{
+        //         confirm("Fail");
+        //     }
+        // }
+        // else{
+        //     alert("invalid mark");
+        // }
+      let mark=Number(prompt("Enter mark"))
+      switch(true){
+        case (mark>=80 && mark<=100):{
+                alert("1st class");
+                break;
+        }
+        case (mark>=60 && mark<80):{
+            alert("2nd class");
+            break;
+
+        }
+        case (mark>=50&&mark<60):{
+            alert("3rd class");
+            break;
+        }
+        case (mark<=40):{
+            alert("fail");
+            break;
+        } 
+        default:{
+            alert("invalid mark");
+        }
+    
+      }
+    </script>
+</body>
+</html>

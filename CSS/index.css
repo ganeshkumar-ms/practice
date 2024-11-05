@@ -1,0 +1,45 @@
+.essay{
+    color: blue;
+}
+.fam{
+    color: yellow;
+}
+.lyf{
+    color: rgb(12, 3, 20);
+}
+
+div{
+    background-color: aqua;
+    color: black;
+
+    height: 400px;
+    width: 200px;
+}
+
+.tech{
+    background-color: aquamarine;
+    color: green;
+}
+
+.neg{
+    color: rgb(240, 142, 13);
+}
+
+.pol{
+    color: brown;
+}
+
+#vital{
+    background-color: rgb(158, 158, 245);
+    color:blueviolet;
+}
+
+div[class="negative"]{
+    background-color: brown;
+    color: rgb(236, 202, 161);
+}
+
+#pollution{
+    background-color: chocolate;
+    color: white;
+}

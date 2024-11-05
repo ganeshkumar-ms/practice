@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram Reviews</title>
+        <link rel="icon" href="https://www.freepnglogos.com/uploads/pics-photos-instagram-logo-png-4.png">
+        <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body class="w-100 h-100"
+        style="background:linear-gradient(rgb(197, 37, 152),rgb(139, 139, 228));background-attachment: fixed;">
+        <div class="p-5"><p
+                style="font-family: Poppins;font-weight: 800;font-size: 30px;"
+                class="p-2 m-2">Review Here,</p>
+            <textarea id="review" class="rounded-3 m-2"
+                style="height: 100px;width: 300px;"
+                placeholder="Type your review"></textarea>
+            <br><button class="m-2 btn btn-danger rounded-3"
+                style="width: 100px;" onclick="demo()">Submit</button>
+        </div>
+
+        <div class="p-4" style="position:absolute;margin-left: 40%; width: 600px;top:90px;height:430px;border-left: 2px solid #000 ;">
+        <div class="username">
+        <ul id="display" style="list-style: none;background-color: white;" class="rounded-3">
+        </ul></div></div>
+
+        <script src="taskDOM.js"></script>
+    </body>
+</html>

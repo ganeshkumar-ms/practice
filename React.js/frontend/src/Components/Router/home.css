@@ -1,0 +1,32 @@
+.sample{
+    background-color: aqua;
+    color: cadetblue;
+}
+
+.demorouting{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 300px 500px;
+}
+
+.sidebar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 3.5;
+    display: block;
+    list-style: none;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #000;
+}
+
+.mainoutput{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

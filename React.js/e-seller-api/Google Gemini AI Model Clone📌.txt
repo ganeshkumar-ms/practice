@@ -1,0 +1,14 @@
+Google Gemini AI Model Clone📌
+
+I'm thrilled to share that after 5 days of focused work, I've successfully completed my latest project-a clone of the Google Gemini AI model! 🌟
+
+In this project, I leveraged Google Gemini 1.5 Flash and utilized the predefined React package `@google/generative-ai` to build the core functionality. I also generated the API key using Google AI Studio to seamlessly integrate the model. The user interface was crafted with React.js for a smooth and intuitive experience.🚀
+
+You can check out the live demo here: [ https://google-ai-gemini.netlify.app ]
+
+This project has been a fantastic opportunity to dive deep into generative AI and further hone my skills in full-stack development. I’m excited about the potential applications of this technology and look forward to exploring more innovative AI-driven projects!
+
+Disclaimer!!: This is a basic model and may not always provide highly accurate info, including about people, so double-check its responses.
+
+
+#GoogleGemini #ReactJS #WebDevelopment #Tech #FullStackDevelopment #FrontEndDeveloper
